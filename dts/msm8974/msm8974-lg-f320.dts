@@ -1,0 +1,15 @@
+// SPDX-License-Identifier: GPL-2.0-only
+
+/dts-v1/;
+
+#include <skeleton.dtsi>
+#include <lk2nd.h>
+
+/ {
+	// This is used by the bootloader to find the correct DTB
+	qcom,msm-id = <126 111 0>;
+
+	model = "Qualcomm MSM 8974 G2 KR";
+	compatible = "qcom,msm8974", "lk2nd,device";
+	lk2nd,match-cmdline = "*LG-F320*";
+};
